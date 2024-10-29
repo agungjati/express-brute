@@ -15,7 +15,7 @@
   "license": "BSD",
   "private": false,
   "scripts": {
-    "test": "./node_modules/.bin/istanbul cover ./node_modules/mocha/bin/_mocha spec"
+    "test": "nyc mocha spec"
   },
   "repository": {
     "type": "git",
@@ -24,15 +24,15 @@
   "devDependencies": {
     "chai": "~3.5.0",
     "coveralls": "~2.11.9",
-    "istanbul": "~0.4.3",
     "mocha": "~2.4.5",
     "mocha-lcov-reporter": "~1.2.0",
     "sinon": "~1.17.3",
-    "sinon-chai": "~2.8.0"
+    "sinon-chai": "~2.8.0",
+    "nyc": "~17.1.0"
   },
   "dependencies": {
     "long-timeout": "~0.1.1",
-    "underscore": "~1.8.3"
+    "underscore": "^1.13.7"
   },
   "peerDependencies": {
     "express": "4.x"
